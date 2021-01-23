@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 10vh;
+	background-color: #757575;
+}
+h1{
+	font-family: monospace;
+	text-align: center;
+	color: #EEEEEE;
+}
+main{
+	position: fixed;
+	height: 90vh;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(180deg, #212121, #424242);
+}
+#ball{
+	position: relative;
+	height: 5vh;
+	width: 5vh;
+	background: #E0E0E0;
+	border-radius: 50%;
+	margin-left: 50%;
+	animation-name: fall;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes fall{
+	0%{
+		top: 0vh;
+	}
+	10%{
+		top: 1vh;
+	}
+	20%{
+		top: 4vh;
+	}
+	30%{
+		top: 8vh;
+	}
+	40%{
+		top: 14vh;
+	}
+	50%{
+		top: 23vh;
+	}
+	60%{
+		top: 32vh;
+	}
+	70%{
+		top: 44vh;
+	}
+	80%{
+		top: 58vh;
+	}
+	90%{
+		top: 73vh;
+	}
+	100%{
+		top: 90vh;
+	}
+}
+</style>
+	<head>
+		<title>Gravity Demo</title>
+	</head>
+	<header>
+		<h1>Gravity Demo</h1>
+	</header>
+	<main>
+		<div id="ball"></div>
+	</main>
+</html>
